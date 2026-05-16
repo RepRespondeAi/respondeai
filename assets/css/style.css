@@ -1,0 +1,129 @@
+/* RESET */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BODY */
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: #0f172a;
+    color: white;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background-image: url('../images/fundoescolar.png');    
+    background-size: cover;       /* Faz ocupar toda a tela */
+    background-position: center;  /* Centraliza */
+    background-repeat: no-repeat; /* Não repete */
+    font-family: Arial, sans-serif;
+}
+
+/* HEADER */
+header{
+    width: 100%;
+    background: #1e293b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 40px;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+header .logo-img{
+    object-fit: cover;
+    width: 15%;
+    
+}
+
+header .img{
+    width:100%;
+    height: 100px;
+}
+
+/* LOGO */
+.logo-container{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    height: 105px;
+    object-fit: cover;
+}
+
+.logo{
+    font-size: 28px;
+    font-weight: bold;
+    color: #38bdf8;
+}
+
+/* MENU */
+nav{
+    display: flex;
+    gap: 20px;
+}
+
+nav a{
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav a:hover{
+    color: #38bdf8;
+}
+
+.perfil{
+    position: relative;
+    display: inline-block;
+}
+
+.perfil li a {
+    display: inline-block;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    box-shadow: 3px 3px 30px #182163;
+
+}
+
+.dropdown {
+    width: 5rem;
+    background:#1e297b;
+    max-height: 0;
+    transition: max-height 0.3s ease-out;
+    position: absolute;
+        top:100%;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+    text-align: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.dropdown li { 
+    list-style: none;
+    padding: .2rem 0;
+}
+
+.perfil:hover .dropdown{
+    max-height: 200px;
+    transition: max-height 0.47s ease-in;
+}
+
+
+@media(max-width: 768px){
+
+    header{
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}
