@@ -1,0 +1,525 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responde aí!</title>
+    <link rel="stylesheet" href="../assets/css/core.css">
+    <link rel="stylesheet" href="../assets/css/mentores.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        
+        <a class="logo" href="/">
+            <h1>Responde aí</h1>
+        </a>
+        
+        <div class="searchbox">
+            <img src="../assets/images/icons/lupa.png" alt="">
+            <input type="search" name="" id="" placeholder="Buscar dúvidas ou mentores">
+        </div>
+
+        <div class="profile">
+            <button><img src="../assets/images/icons/sino.png" alt="Notificações"></button>
+            
+            <div class="profile-dropdown">
+                <button class="profile-trigger"><img src="../assets/images/icons/perfil.png" alt="Perfil"></button>
+                <div class="dropdown-menu">
+                    <a href="pages/login.html">Login</a>
+                    <a href="pages/register.html">Cadastrar-se</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="layout">
+    <!-- BARRA LATERAL -->
+        <aside class="sidebar">
+
+            <h1>Meu Painel</h1>
+
+            <nav>
+                <ul>
+                    <li>
+                        <a href="/">
+                            <img src="../assets/images/icons/perguntas_icon.png" alt="">
+                            Perguntas
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/pages/recursos.html">
+                            <img src="../assets/images/icons/recursos_icon.png" alt="">
+                            Recursos
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="cpage" href="/pages/mentores.html">
+                            <img src="../assets/images/icons/mentores_icon.png" alt="">
+                            Mentores
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/pages/perfil-estud.html">
+                            <img src="../assets/images/icons/perfil_icon.png" alt="">
+                            Perfil
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            
+        </aside>
+
+        
+        <main>
+            <section class="headfilter">
+                <div class="sumario">
+                <h1>Nossos mentores</h1>
+                <p>Conecte-se com especialistas para acelerar seu aprendizado acadêmico.</p>
+                </div>
+
+                <div class="filtros">
+                    <a href="#" class="filatual">Todas as matérias</a>
+                    <a href="#">Cálculo I</a>
+                    <a href="#">Física</a>
+                    <a href="#">Química</a>
+                    <a href="#">Inglês</a>
+                    <a href="#">Programação</a>
+            </section>
+
+
+            <section class="mentores">
+                
+                <article class="mentor">
+
+                    <div class="mheader">
+
+                        <img class="avatar" src="../assets/images/icons/defaultprofile.png" alt="">
+
+                        <div class="rating">
+                            <img src="../assets/images/icons/star.png" alt="">
+                            <span>4.9</span>
+                        </div>
+
+                    </div>
+
+                    <div class="mcontent">
+                        
+                        <h2 class="mentor-name">Bruno Alencar</h2>
+                    
+
+                        <div class="mentor-tags">
+                            <span class="mentor-tag">Programação</span>
+                            <span class="mentor-tag">Node.js</span>
+                            <span class="mentor-tag">Javascript</span>
+                            <span class="mentor-tag">Arquitetura de software</span>
+                        </div>
+
+                        <p class="mentor-description">Dev Backend Senior apaixonado por ensinar. Simplifico arquiteturas complexas de microsserviços e bancos de dados para iniciantes.</p>
+                    </div>
+                    <div class="mfooter">
+
+                        <span class="mentorias">342 mentorias realizadas</span>
+
+                        <span class="mentor-price">R$ 85/h</span>
+
+                    </div>
+
+                    <button class="mentor-profile">Ver perfil</button>
+
+                </article>
+
+                <article class="mentor">
+
+                    <div class="mheader">
+
+                        <img class="avatar" src="../assets/images/icons/defaultprofile.png" alt="">
+
+                        <div class="rating">
+                            <img src="../assets/images/icons/star.png" alt="">
+                            <span>5.0</span>
+                        </div>
+
+                    </div>
+
+                    <div class="mcontent">
+                        
+                        <h2 class="mentor-name">Mariana Costa</h2>
+                    
+
+                        <div class="mentor-tags">
+                            <span class="mentor-tag">Cálculo I</span>
+                            <span class="mentor-tag">Cálculo II</span>
+                            <span class="mentor-tag">Álgebra linear</span>
+                            <span class="mentor-tag">Matemática avançada</span>
+                        </div>
+
+                        <p class="mentor-description">Mestre em Matemática Aplicada. Se você acha que Cálculo é um monstro de sete cabeças, eu quebro ele em pedacinhos para você passar na prova.</p>
+                    </div>
+                    <div class="mfooter">
+
+                        <span class="mentorias">512 mentorias realizadas</span>
+
+                        <span class="mentor-price">R$ 70/h</span>
+
+                    </div>
+                    <form action="/pages/perfil-mentor.html">
+                    <button type="submit" class="mentor-profile">Ver perfil</button>
+                    </form>
+
+                </article>
+
+                <article class="mentor">
+
+                    <div class="mheader">
+
+                        <img class="avatar" src="../assets/images/icons/defaultprofile.png" alt="">
+
+                        <div class="rating">
+                            <img src="../assets/images/icons/star.png" alt="">
+                            <span>4.8</span>
+                        </div>
+
+                    </div>
+
+                    <div class="mcontent">
+                        
+                        <h2 class="mentor-name">Carlos Eduardo (Cadu)</h2>
+                    
+
+                        <div class="mentor-tags">
+                            <span class="mentor-tag">Termodinâmica</span>
+                            <span class="mentor-tag">Física</span>
+                            <span class="mentor-tag">Física mecânica</span>
+                            <span class="mentor-tag">Engenharia</span>
+                        </div>
+
+                        <p class="mentor-description">Físico e pesquisador. Foco total na resolução prática de listas de exercícios complexas e preparação estratégica para exames.</p>
+                    </div>
+                    <div class="mfooter">
+
+                        <span class="mentorias">215 mentorias realizadas</span>
+
+                        <span class="mentor-price">R$ 65/h</span>
+
+                    </div>
+
+                    <button class="mentor-profile">Ver perfil</button>
+
+                </article>
+
+                <article class="mentor">
+
+                    <div class="mheader">
+
+                        <img class="avatar" src="../assets/images/icons/defaultprofile.png" alt="">
+
+                        <div class="rating">
+                            <img src="../assets/images/icons/star.png" alt="">
+                            <span>4.9</span>
+                        </div>
+
+                    </div>
+
+                    <div class="mcontent">
+                        
+                        <h2 class="mentor-name">Ana Clara Lima</h2>
+                    
+
+                        <div class="mentor-tags">
+                            <span class="mentor-tag">Português</span>
+                            <span class="mentor-tag">Redação acadêmica</span>
+                            <span class="mentor-tag">Comunicação</span>
+                            <span class="mentor-tag">TCC</span>
+                        </div>
+
+                        <p class="mentor-description">Especialista em escrita criativa e acadêmica. Te ajudo a destravar as normas da ABNT e estruturar o seu TCC sem desespero.</p>
+                    </div>
+                    <div class="mfooter">
+
+                        <span class="mentorias">189 mentorias realizadas</span>
+
+                        <span class="mentor-price">R$ 60/h</span>
+
+                    </div>
+
+                    <button class="mentor-profile">Ver perfil</button>
+
+                </article>
+
+                <article class="mentor">
+
+                    <div class="mheader">
+
+                        <img class="avatar" src="../assets/images/icons/defaultprofile.png" alt="">
+
+                        <div class="rating">
+                            <img src="../assets/images/icons/star.png" alt="">
+                            <span>4.7</span>
+                        </div>
+
+                    </div>
+
+                    <div class="mcontent">
+                        
+                        <h2 class="mentor-name">Bruno Rocha</h2>
+                    
+
+                        <div class="mentor-tags">
+                            <span class="mentor-tag">Data Science</span>
+                            <span class="mentor-tag">Python</span>
+                            <span class="mentor-tag">Machine Learning</span>
+                        </div>
+
+                        <p class="mentor-description">Cientista de dados no mercado financeiro. Te guio desde os primeiros scripts em Python até o deploy de modelos preditivos reais.</p>
+                    </div>
+                    <div class="mfooter">
+
+                        <span class="mentorias">298 mentorias realizadas</span>
+
+                        <span class="mentor-price">R$ 90/h</span>
+
+                    </div>
+
+                    <button class="mentor-profile">Ver perfil</button>
+
+                </article>
+
+                <article class="mentor">
+
+                    <div class="mheader">
+
+                        <img class="avatar" src="../assets/images/icons/defaultprofile.png" alt="">
+
+                        <div class="rating">
+                            <img src="../assets/images/icons/star.png" alt="">
+                            <span>4.9</span>
+                        </div>
+
+                    </div>
+
+                    <div class="mcontent">
+                        
+                        <h2 class="mentor-name">Juliana Vieira</h2>
+                    
+
+                        <div class="mentor-tags">
+                            <span class="mentor-tag">Algoritmos</span>
+                            <span class="mentor-tag">C++</span>
+                            <span class="mentor-tag">Java</span>
+                            <span class="mentor-tag">Lógica pura</span>
+                        </div>
+
+                        <p class="mentor-description">Engenheira de Software. Foco em análise de complexidade de código (Big O) e preparação técnica para processos seletivos.</p>
+                    </div>
+                    <div class="mfooter">
+
+                        <span class="mentorias">403 mentorias realizadas</span>
+
+                        <span class="mentor-price">R$ 80/h</span>
+
+                    </div>
+
+                    <button class="mentor-profile">Ver perfil</button>
+
+                </article>
+
+                <article class="mentor">
+
+                    <div class="mheader">
+
+                        <img class="avatar" src="../assets/images/icons/defaultprofile.png" alt="">
+
+                        <div class="rating">
+                            <img src="../assets/images/icons/star.png" alt="">
+                            <span>4.6</span>
+                        </div>
+
+                    </div>
+
+                    <div class="mcontent">
+                        
+                        <h2 class="mentor-name">Dr. Roberto Assis</h2>
+                    
+
+                        <div class="mentor-tags">
+                            <span class="mentor-tag">Bioquímica</span>
+                            <span class="mentor-tag">Química orgânica</span>
+                            <span class="mentor-tag">Biotecnologia</span>
+                        </div>
+
+                        <p class="mentor-description">Doutorando em Biotecnologia. Descomplico reações químicas moleculares e processos complexos usando analogias simples do dia a dia.</p>
+                    </div>
+                    <div class="mfooter">
+
+                        <span class="mentorias">124 mentorias realizadas</span>
+
+                        <span class="mentor-price">R$ 75/h</span>
+
+                    </div>
+
+                    <button class="mentor-profile">Ver perfil</button>
+
+                </article>
+
+                <article class="mentor">
+
+                    <div class="mheader">
+
+                        <img class="avatar" src="../assets/images/icons/defaultprofile.png" alt="">
+
+                        <div class="rating">
+                            <img src="../assets/images/icons/star.png" alt="">
+                            <span>5.0</span>
+                        </div>
+
+                    </div>
+
+                    <div class="mcontent">
+                        
+                        <h2 class="mentor-name">Beatriz Mello</h2>
+                    
+
+                        <div class="mentor-tags">
+                            <span class="mentor-tag">Frontend</span>
+                            <span class="mentor-tag">React.js</span>
+                            <span class="mentor-tag">UI/UX</span>
+                            <span class="mentor-tag">CSS Responsivo</span>
+                        </div>
+
+                        <p class="mentor-description">Dev Frontend. Ajudo estudantes a transformarem layouts estáticos do Figma em códigos reais, semânticos, limpos e acessíveis.</p>
+                    </div>
+                    <div class="mfooter">
+
+                        <span class="mentorias">467 mentorias realizadas</span>
+
+                        <span class="mentor-price">R$ 85/h</span>
+
+                    </div>
+
+                    <button class="mentor-profile">Ver perfil</button>
+
+                </article>
+
+                <article class="mentor">
+
+                    <div class="mheader">
+
+                        <img class="avatar" src="../assets/images/icons/defaultprofile.png" alt="">
+
+                        <div class="rating">
+                            <img src="../assets/images/icons/star.png" alt="">
+                            <span>4.8</span>
+                        </div>
+
+                    </div>
+
+                    <div class="mcontent">
+                        
+                        <h2 class="mentor-name">Lucas Souza</h2>
+                    
+
+                        <div class="mentor-tags">
+                            <span class="mentor-tag">Estatística</span>
+                            <span class="mentor-tag">Linguagem R</span>
+                            <span class="mentor-tag">Data Business</span>
+                        </div>
+
+                        <p class="mentor-description">Estatístico focado em BI. Te ensino a interpretar gráficos, entender distribuições e dominar testes de hipótese de forma prática.</p>
+                    </div>
+                    <div class="mfooter">
+
+                        <span class="mentorias">156 mentorias realizadas</span>
+
+                        <span class="mentor-price">R$ 65/h</span>
+
+                    </div>
+
+                    <button class="mentor-profile">Ver perfil</button>
+
+                </article>
+
+                <article class="mentor">
+
+                    <div class="mheader">
+
+                        <img class="avatar" src="../assets/images/icons/defaultprofile.png" alt="">
+
+                        <div class="rating">
+                            <img src="../assets/images/icons/star.png" alt="">
+                            <span>4.9</span>
+                        </div>
+
+                    </div>
+
+                    <div class="mcontent">
+                        
+                        <h2 class="mentor-name">Fernanda Dias</h2>
+                    
+
+                        <div class="mentor-tags">
+                            <span class="mentor-tag">Automação</span>
+                            <span class="mentor-tag">Circuitos elétricos</span>
+                            <span class="mentor-tag">Lógica de CLP</span>
+                        </div>
+
+                        <p class="mentor-description">Engenheira de Automação. Ajudo a desvendar teoremas de circuitos elétricos, análise de malhas e sistemas industriais sem estresse.</p>
+                    </div>
+                    <div class="mfooter">
+
+                        <span class="mentorias">98 mentorias realizadas</span>
+
+                        <span class="mentor-price">R$ 70/h</span>
+
+                    </div>
+
+                    <button class="mentor-profile">Ver perfil</button>
+
+                </article>
+
+            </section>
+
+            <div class="load-more-container">
+                <button class="load-more">
+                    Carregar mais mentores
+                    <span>↓</span>
+                </button>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+    <div class="footer-left">
+        <h2>Responde Aí</h2>
+        <p>© 2024 Responde Aí - Excelência Acadêmica</p>
+    </div>
+
+    <nav class="footer-links">
+        <a href="#">Privacidade</a>
+        <a href="#">Termos</a>
+        <a href="#">Ajuda</a>
+    </nav>
+
+    <div class="footer-social">
+        <a href="#">
+            <img src="../assets/images/icons/facebook_icon.png" alt="Discord">
+        </a>
+
+        <a href="#">
+            <img src="../assets/images/icons/instagram_icon.png" alt="GitHub">
+        </a>
+
+        <a href="#">
+            <img src="../assets/images/icons/twitter_icon.png" alt="Perfil">
+        </a>
+    </div>
+</footer>
+</body>
+</html>

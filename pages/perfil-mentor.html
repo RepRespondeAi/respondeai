@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responde aí!</title>
+    <link rel="stylesheet" href="../assets/css/core.css">
+    <link rel="stylesheet" href="../assets/css/pmentor.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        
+        <a class="logo" href="/">
+            <h1>Responde aí</h1>
+        </a>
+        
+        <div class="searchbox">
+            <img src="../assets/images/icons/lupa.png" alt="">
+            <input type="search" name="" id="" placeholder="Buscar dúvidas ou mentores">
+        </div>
+
+        <div class="profile">
+            <button><img src="../assets/images/icons/sino.png" alt="Notificações"></button>
+            
+            <div class="profile-dropdown">
+                <button class="profile-trigger"><img src="../assets/images/icons/perfil.png" alt="Perfil"></button>
+                <div class="dropdown-menu">
+                    <a href="pages/login.html">Login</a>
+                    <a href="pages/register.html">Cadastrar-se</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="layout">
+    <!-- BARRA LATERAL -->
+        <aside class="sidebar">
+
+            <h1>Meu Painel</h1>
+
+            <nav>
+                <ul>
+                    <li>
+                        <a href="/">
+                            <img src="../assets/images/icons/perguntas_icon.png" alt="">
+                            Perguntas
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/pages/recursos.html">
+                            <img src="../assets/images/icons/recursos_icon.png" alt="">
+                            Recursos
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="cpage" href="/pages/mentores.html">
+                            <img src="../assets/images/icons/mentores_icon.png" alt="">
+                            Mentores
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/pages/perfil-estud.html">
+                            <img src="../assets/images/icons/perfil_icon.png" alt="">
+                            Perfil
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            
+        </aside>
+
+        
+        <main>
+
+            <section class="mentor-profile-page">
+    
+                <div class="mentor-banner">
+                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&q=80&w=1280" alt="Banner Mentor">
+                </div>
+
+                <section class="mentor-header-card">
+                    
+                    <div class="mentor-avatar-container">
+                        <div class="mentor-avatar-circle">
+                            <img src="../assets/images/icons/defaultprofile.png" alt="Foto do Mentor">
+                            <div class="mentor-rating-badge">
+                                <img src="../assets/images/icons/star.png" alt="">
+                                <span>4.9</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mentor-main-info">
+                        <div class="mentor-info-top">
+                            <div class="mentor-text">
+                                <h2>Mariana Costa</h2>
+                                <p class="mentor-headline">Mentor Especialista em Cálculo, Análise Matemática & Python</p>
+                            </div>
+                            <div class="mentor-actions">
+                                <button class="btn-primary">Agendar Mentoria</button>
+                                <button class="btn-outline">Enviar Mensagem</button>
+                            </div>
+                        </div>
+
+                        <p class="mentor-description">
+                            Doutoranda em Matemática Aplicada com mais de 5 anos de experiência lecionando disciplinas de cálculo e análise para cursos de engenharia. Meu foco é desmistificar conceitos complexos, transformando equações abstratas em ferramentas práticas para o seu desenvolvimento acadêmico.
+                            <br><br>
+                            Acredito que o aprendizado de exatas deve ser focado na compreensão lógica em vez da simples memorização de fórmulas. Se você está travado em integrais, séries ou precisa de auxílio com modelagem em Python, estou aqui para estruturar seu caminho rumo ao sucesso acadêmico.
+                        </p>
+
+                        <div class="mentor-stats">
+                            <div class="stat-item">
+                                <span class="stat-label">SESSÕES</span>
+                                <strong class="stat-value">432</strong>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-label">RESPOSTAS</span>
+                                <strong class="stat-value">1.2k+</strong>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <div class="mentor-details-grid">
+                    
+                    <aside class="mentor-details-sidebar">
+                        
+                        <section class="details-card">
+                            <h3>Especialidades</h3>
+                            <div class="specialties-tags">
+                                <span class="tag-blue">Cálculo I, II e III</span>
+                                <span class="tag-blue">Equações Diferenciais</span>
+                                <span class="tag-blue">Álgebra Linear</span>
+                                <span class="tag-blue">Matemática Discreta</span>
+                                <span class="tag-blue">Python (NumPy/Pandas)</span>
+                                <span class="tag-blue">Probabilidade</span>
+                            </div>
+                        </section>
+
+                        <section class="details-card">
+                            <h3>Disponibilidade</h3>
+                            <div class="availability-list">
+                                <div class="availability-row">
+                                    <span>Segunda - Sexta</span>
+                                    <strong>18:00 - 22:00</strong>
+                                </div>
+                                <div class="availability-row">
+                                    <span>Sábado</span>
+                                    <strong>09:00 - 13:00</strong>
+                                </div>
+                            </div>
+                            <div class="availability-status">
+                                <span class="status-dot"></span>
+                                Disponível agora
+                            </div>
+                        </section>
+
+                    </aside>
+
+                    <div class="mentor-testimonials-area">
+                        <section class="details-card">
+                            <h3>O que os estudantes dizem</h3>
+                            
+                            <div class="testimonials-grid">
+                                <article class="testimonial-box">
+                                    <span class="quote-icon">“</span>
+                                    <p>“A didática da Mariana é excelente! Consegui entender Cálculo II em apenas duas sessões de mentoria. Ela tem uma paciência enorme com conceitos difíceis.”</p>
+                                    <div class="student-info">
+                                        <img src="../assets/images/icons/defaultprofile.png" alt="">
+                                        <div>
+                                            <strong>Ricardo Alves</strong>
+                                            <span>ENGENHARIA CIVIL</span>
+                                        </div>
+                                    </div>
+                                </article>
+
+                                <article class="testimonial-box">
+                                    <span class="quote-icon">“</span>
+                                    <p>“Sempre me ajudou com a lógica de programação aplicada à matemática. As sessões de Python dela foram fundamentais para minha aprovação em Métodos Numéricos.”</p>
+                                    <div class="student-info">
+                                        <img src="../assets/images/icons/defaultprofile.png" alt="">
+                                        <div>
+                                            <strong>Beatriz Souza</strong>
+                                            <span>CIÊNCIA DA COMPUTAÇÃO</span>
+                                        </div>
+                                    </div>
+                                </article>
+                            </div>
+                        </section>
+                    </div>
+
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <footer>
+    <div class="footer-left">
+        <h2>Responde Aí</h2>
+        <p>© 2024 Responde Aí - Excelência Acadêmica</p>
+    </div>
+
+    <nav class="footer-links">
+        <a href="#">Privacidade</a>
+        <a href="#">Termos</a>
+        <a href="#">Ajuda</a>
+    </nav>
+
+    <div class="footer-social">
+        <a href="#">
+            <img src="../assets/images/icons/facebook_icon.png" alt="Discord">
+        </a>
+
+        <a href="#">
+            <img src="../assets/images/icons/instagram_icon.png" alt="GitHub">
+        </a>
+
+        <a href="#">
+            <img src="../assets/images/icons/twitter_icon.png" alt="Perfil">
+        </a>
+    </div>
+</footer>
+</body>
+</html>

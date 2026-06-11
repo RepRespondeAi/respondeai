@@ -1,0 +1,267 @@
+:root{
+    --cinzabg: #131313;
+    --cinzaborder: rgb(74, 68, 85);
+    --cinzahoverbg: #2A2A2A;
+    --azulselectbg: #0566D9;
+    --roxodestaque: #7C3AED;
+    --azulroles: #0566D933;
+    --azulroles2: #ADC6FF;
+    --logofontcolor: #D2BBFF;
+    --navfontcolor: #CCC3D8;
+    --titlefontcolor: #E5E2E1;
+    --subtitlefontcolor: #CCC3D8;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Inter, Arial, Helvetica;
+}
+
+body{
+    background-color: var(--cinzabg);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+a{
+    text-decoration: none;
+}
+
+header{
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem 2%;
+    border-bottom: 1px solid var(--cinzaborder);
+}
+
+.logo{
+    color: var(--logofontcolor);
+    font-size: 18px;
+}
+
+.searchbox{
+    position: relative;
+    width: 20rem;
+}
+
+.searchbox img{
+    position: absolute;
+    top: 30%;
+    left: 5%;
+}
+
+.searchbox input{
+    width: 100%;
+    height: 3rem;
+
+    padding-left: 40px;
+
+    background-color: #0e0e0e;
+    color: #6B7280;
+
+    border: 2px solid #0e0e0e;
+    border-radius: 12px;
+}
+
+.searchbox input:focus{
+    outline: 1px solid var(--logofontcolor);
+}
+
+.profile{
+    display: flex;
+    gap: 2rem;
+}
+
+.profile button{
+    all: unset;
+    cursor: pointer;
+}
+
+/* Container que mantém o menu posicionado */
+.profile-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* O menu em si */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    /* Criamos um espaço entre o ícone e o menu para evitar o "gap" */
+    top: 100%; 
+    padding-top: 15px; /* Esta área permite que o mouse transite para o menu */
+    
+    background: transparent; /* Invisível, mas funcional */
+    min-width: 150px;
+    z-index: 1000;
+}
+
+/* Criamos uma camada interna real para o menu */
+.dropdown-content {
+    background-color: var(--cinzabg);
+    border: 1px solid var(--cinzaborder);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.dropdown-menu a {
+    display: block;
+    padding: 0.75rem 1rem;
+    color: var(--navfontcolor);
+    font-size: 14px;
+    transition: background 0.2s;
+}
+
+.dropdown-menu a:hover {
+    background-color: var(--cinzahoverbg);
+    color: #fff;
+}
+
+/* O segredo: a classe pai mantém o menu visível */
+.profile-dropdown:hover .dropdown-menu {
+    display: block;
+    background-color: var(--cinzabg);
+    border: 1px solid var(--cinzaborder);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+.layout{
+    display: flex;
+    flex: 1;
+}
+
+.sidebar{
+    width: 300px;
+
+    display: flex;
+    flex-direction: column;
+
+    color: var(--navfontcolor);
+
+    border-right: 1px solid var(--cinzaborder);
+}
+
+.sidebar h1{
+    text-align: center;
+    padding: 10% 0;
+}
+
+.sidebar ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    padding-left: 1.5rem;
+}
+
+.sidebar ul li{
+    width: 90%;
+    border-radius: 10px;
+}
+
+.sidebar ul li img{
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+.sidebar ul li a{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: .5rem 1rem;
+
+    color: var(--navfontcolor);
+    font-size: 24px;
+}
+
+.sidebar ul li:hover{
+    background-color: var(--cinzahoverbg);
+}
+
+.cpage{
+    background-color: var(--azulselectbg);
+    border-radius: 10px;
+}
+
+main{
+    width: 100%;
+    padding: 1rem 2rem;
+}
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 2rem;
+
+    background-color: #0E0E0E;
+    border-top: 1px solid var(--cinzaborder);
+}
+
+.footer-left h2{
+    color: var(--logofontcolor);
+    margin-bottom: .25rem;
+}
+
+.footer-left p{
+    color: var(--subtitlefontcolor);
+    font-size: 14px;
+}
+
+.footer-links{
+    display: flex;
+    gap: 2rem;
+}
+
+.footer-links a{
+    color: var(--subtitlefontcolor);
+}
+
+.footer-links a:hover{
+    color: var(--titlefontcolor);
+}
+
+.footer-social{
+    display: flex;
+    gap: .75rem;
+}
+
+.footer-social a{
+    width: 36px;
+    height: 36px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #1A1A1A;
+    border-radius: 50%;
+}
+
+.footer-social img{
+    width: 18px;
+    height: 18px;
+}
+
+@media screen and (max-width: 900px){
+
+    .searchbox{
+        display:none;
+    }
+
+    .profile{
+        margin-right:20%;
+    }
+}

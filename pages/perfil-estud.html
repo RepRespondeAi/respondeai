@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responde aí!</title>
+    <link rel="stylesheet" href="../assets/css/core.css">
+    <link rel="stylesheet" href="../assets/css/pestudante.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        
+        <a class="logo" href="/">
+            <h1>Responde aí</h1>
+        </a>
+        
+        <div class="searchbox">
+            <img src="../assets/images/icons/lupa.png" alt="">
+            <input type="search" name="" id="" placeholder="Buscar dúvidas ou mentores">
+        </div>
+
+        <div class="profile">
+            <button><img src="../assets/images/icons/sino.png" alt="Notificações"></button>
+            
+            <div class="profile-dropdown">
+                <button class="profile-trigger"><img src="../assets/images/icons/perfil.png" alt="Perfil"></button>
+                <div class="dropdown-menu">
+                    <a href="pages/login.html">Login</a>
+                    <a href="pages/register.html">Cadastrar-se</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="layout">
+    <!-- BARRA LATERAL -->
+        <aside class="sidebar">
+
+            <h1>Meu Painel</h1>
+
+            <nav>
+                <ul>
+                    <li>
+                        <a href="/">
+                            <img src="../assets/images/icons/perguntas_icon.png" alt="">
+                            Perguntas
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/pages/recursos.html">
+                            <img src="../assets/images/icons/recursos_icon.png" alt="">
+                            Recursos
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/pages/mentores.html">
+                            <img src="../assets/images/icons/mentores_icon.png" alt="">
+                            Mentores
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="cpage" href="/pages/perfil-estud.html">
+                            <img src="../assets/images/icons/perfil_icon.png" alt="">
+                            Perfil
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            
+        </aside>
+
+        
+        <main>
+
+            <section class="profile-page">
+    
+                <div class="profile-banner"></div>
+
+                <section class="profile-header-card">
+                    
+                    <div class="profile-avatar-wrapper">
+                        <div class="avatar-box">
+                            <img src="../assets/images/nerdao.webp" alt="Foto de Perfil">
+                        </div>
+                        <div class="badge-shield">
+                            <img src="../assets/images/icons/verified_icon.png" alt="Badge Escudo">
+                        </div>
+                    </div>
+
+                    <div class="profile-info">
+                        <div class="profile-title-row">
+                            <div>
+                                <h2>Fernanda Oliveira</h2>
+                                <div class="profile-rating">
+                                    <span class="stars">★★★★★</span>
+                                    <strong>4.9</strong>
+                                    <span>(128 avaliações)</span>
+                                </div>
+                            </div>
+                            <div class="profile-actions">
+                                <button class="btn-edit">
+                                    <img src="../assets/images/icons/edit_icon.png" alt=""> Editar Perfil
+                                </button>
+                                <button class="btn-share">
+                                    <img src="../assets/images/icons/share_icon.png" alt="">
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <p class="profile-bio">
+                            Estudante de Engenharia da Computação apaixonada por resolver problemas complexos e compartilhar conhecimento. Sempre em busca de novos desafios em matemática aplicada e desenvolvimento backend. Aberta a colaborações em projetos de estudo!
+                        </p>
+                    </div>
+
+                </section>
+
+                <div class="profile-content-grid">
+                    
+                    <aside class="profile-sidebar">
+                        <section class="profile-card interests-card">
+                            <h3>INTERESSES</h3>
+                            <div class="tags-container">
+                                <span class="tag">Cálculo</span>
+                                <span class="tag">Física Quântica</span>
+                                <span class="tag">Data Science</span>
+                                <span class="tag">Álgebra Linear</span>
+                                <span class="tag">Algoritmos</span>
+                            </div>
+                        </section>
+                    </aside>
+
+                    <div class="profile-main-content">
+                        
+                        <div class="stats-row">
+                            <div class="profile-card stat-card">
+                                <div class="stat-icon">
+                                    <img src="../assets/images/icons/perguntas_icon.png" alt="">
+                                </div>
+                                <div class="stat-data">
+                                    <strong>142</strong>
+                                    <span>PERGUNTAS</span>
+                                </div>
+                            </div>
+
+                            <div class="profile-card stat-card">
+                                <div class="stat-icon">
+                                    <img src="../assets/images/icons/recursos_icon.png" alt="">
+                                </div>
+                                <div class="stat-data">
+                                    <strong>57</strong>
+                                    <span>RECURSOS</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <section class="profile-card activities-card">
+                            <div class="card-header">
+                                <h3>ATIVIDADE RECENTE</h3>
+                                <a href="#">Ver tudo</a>
+                            </div>
+
+                            <div class="activity-list">
+                                
+                                <article class="activity-item">
+                                    <div class="activity-icon">
+                                        <img src="../assets/images/icons/chat_icon.png" alt="">
+                                    </div>
+                                    <div class="activity-details">
+                                        <h4>Respondeu a uma pergunta sobre Termodinâmica</h4>
+                                        <p>Explicação detalhada sobre a 2ª Lei e entropia em sistemas fechados...</p>
+                                        <time>HÁ 2 HORAS</time>
+                                    </div>
+                                </article>
+
+                                <article class="activity-item">
+                                    <div class="activity-icon">
+                                        <img src="../assets/images/icons/upload_icon.png" alt="">
+                                    </div>
+                                    <div class="activity-details">
+                                        <h4>Compartilhou um resumo de Álgebra Linear</h4>
+                                        <p>Material completo sobre autovalores e autovetores para a P2...</p>
+                                        <time>HÁ 1 DIA</time>
+                                    </div>
+                                </article>
+
+                                <article class="activity-item">
+                                    <div class="activity-icon">
+                                        <img src="../assets/images/icons/exclm_icon.png" alt="">
+                                    </div>
+                                    <div class="activity-details">
+                                        <h4>Criou uma nova pergunta em Cálculo III</h4>
+                                        <p>Dúvida sobre integral tripla em coordenadas esféricas...</p>
+                                        <time>HÁ 3 DIAS</time>
+                                    </div>
+                                </article>
+
+                            </div>
+                        </section>
+                        
+                    </div>
+                </div>
+
+            </section>
+
+        </main>
+
+    </div>
+
+    <footer>
+    <div class="footer-left">
+        <h2>Responde Aí</h2>
+        <p>© 2024 Responde Aí - Excelência Acadêmica</p>
+    </div>
+
+    <nav class="footer-links">
+        <a href="#">Privacidade</a>
+        <a href="#">Termos</a>
+        <a href="#">Ajuda</a>
+    </nav>
+
+    <div class="footer-social">
+        <a href="#">
+            <img src="../assets/images/icons/facebook_icon.png" alt="Discord">
+        </a>
+
+        <a href="#">
+            <img src="../assets/images/icons/instagram_icon.png" alt="GitHub">
+        </a>
+
+        <a href="#">
+            <img src="../assets/images/icons/twitter_icon.png" alt="Perfil">
+        </a>
+    </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,171 @@
+/* Container que centraliza o card no meio do <main> */
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: calc(100vh - 15rem); /* Ajuste baseado no header/footer */
+    padding: 2rem 0;
+}
+
+.auth-card {
+    background-color: #1A1A1A;
+    border: 1px solid var(--cinzaborder);
+    border-radius: 16px;
+    width: 100%;
+    max-width: 440px;
+    padding: 2.5rem;
+}
+
+.auth-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.auth-header h1 {
+    color: var(--titlefontcolor);
+    font-size: 28px;
+    margin-bottom: 0.5rem;
+}
+
+.auth-header p {
+    color: var(--subtitlefontcolor);
+    font-size: 15px;
+}
+
+/* Formulário */
+.auth-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-group label {
+    color: var(--navfontcolor);
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.form-group input {
+    background-color: #0E0E0E;
+    border: 2px solid #0E0E0E;
+    border-radius: 10px;
+    padding: 0.8rem 1rem;
+    color: white;
+    font-size: 15px;
+    transition: all 0.2s;
+}
+
+.form-group input:focus {
+    outline: none;
+    border-color: var(--roxodestaque);
+    background-color: #131313;
+}
+
+.label-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.forgot-link, .auth-footer a {
+    color: var(--logofontcolor);
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.forgot-link:hover, .auth-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Botão Principal */
+.btn-auth-primary {
+    background-color: var(--roxodestaque);
+    color: white;
+    border: none;
+    padding: 0.9rem;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 0.5rem;
+    transition: all 0.2s;
+}
+
+.btn-auth-primary:hover {
+    filter: brightness(1.1);
+    transform: translateY(-1px);
+}
+
+/* Divisor */
+.auth-divider {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 1.5rem 0;
+    color: var(--cinzaborder);
+}
+
+.auth-divider::before, .auth-divider::after {
+    content: '';
+    flex: 1;
+    border-bottom: 1px solid var(--cinzaborder);
+}
+
+.auth-divider span {
+    padding: 0 10px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Social Auth */
+.social-auth {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.social-btn {
+    flex: 1;
+    background-color: transparent;
+    border: 1px solid var(--cinzaborder);
+    color: white;
+    padding: 0.7rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background 0.2s;
+}
+
+.social-btn:hover {
+    background-color: var(--cinzahoverbg);
+}
+
+.social-btn img {
+    width: 18px;
+    height: 18px;
+}
+
+/* Rodapé do Card */
+.auth-footer {
+    text-align: center;
+    border-top: 1px solid var(--cinzaborder);
+    padding-top: 1.5rem;
+}
+
+.auth-footer p {
+    color: var(--subtitlefontcolor);
+    font-size: 14px;
+}
+
+.mt-1 { margin-top: 0.5rem; }

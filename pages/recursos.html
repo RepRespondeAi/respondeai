@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responde aí!</title>
+    <link rel="stylesheet" href="../assets/css/core.css">
+    <link rel="stylesheet" href="../assets/css/recursos.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        
+        <a class="logo" href="/">
+            <h1>Responde aí</h1>
+        </a>
+        
+        <div class="searchbox">
+            <img src="../assets/images/icons/lupa.png" alt="">
+            <input type="search" name="" id="" placeholder="Buscar dúvidas ou mentores">
+        </div>
+
+        <div class="profile">
+            <button><img src="../assets/images/icons/sino.png" alt="Notificações"></button>
+            
+            <div class="profile-dropdown">
+                <button class="profile-trigger"><img src="../assets/images/icons/perfil.png" alt="Perfil"></button>
+                <div class="dropdown-menu">
+                    <a href="pages/login.html">Login</a>
+                    <a href="pages/register.html">Cadastrar-se</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="layout">
+    <!-- BARRA LATERAL -->
+        <aside class="sidebar">
+
+            <h1>Meu Painel</h1>
+
+            <nav>
+                <ul>
+                    <li>
+                        <a href="/">
+                            <img src="../assets/images/icons/perguntas_icon.png" alt="">
+                            Perguntas
+                        </a>
+                    </li>
+
+                    <li>
+                        <a class="cpage" href="/pages/recursos.html">
+                            <img src="../assets/images/icons/recursos_icon.png" alt="">
+                            Recursos
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/pages/mentores.html">
+                            <img src="../assets/images/icons/mentores_icon.png" alt="">
+                            Mentores
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="/pages/perfil-estud.html">
+                            <img src="../assets/images/icons/perfil_icon.png" alt="">
+                            Perfil
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            
+        </aside>
+
+        
+        <main>
+
+            <section class="resources-page">
+    
+    <div class="resources-header">
+        <div class="header-text">
+            <h1>Biblioteca de Recursos</h1>
+            <p>Acesse resumos, PDF's e guias de estudo curados pela comunidade para acelerar seu aprendizado.</p>
+        </div>
+        <button class="btn-upload">
+            <img src="../assets/images/icons/upload_icon.png" alt="">
+            Enviar Material
+        </button>
+    </div>
+
+    <nav class="resources-filters">
+        <button class="filter-btn active">Tudo</button>
+        <button class="filter-btn">Cálculo I</button>
+        <button class="filter-btn">Física Geral</button>
+        <button class="filter-btn">Estrutura de Dados</button>
+        <button class="filter-btn">Álgebra Linear</button>
+        <button class="filter-btn">Termodinâmica</button>
+    </nav>
+
+    <div class="resources-grid">
+        
+        <article class="resource-card">
+            <div class="resource-preview">
+                <img src="../assets/images/icons/recursos_icon.png" alt="Preview">
+            </div>
+            
+            <div class="resource-content">
+                <div class="resource-top">
+                    <div class="resource-tags">
+                        <span class="tag-category">RESUMO</span>
+                        <span class="tag-subject">CÁLCULO I</span>
+                    </div>
+                    <div class="resource-rating">★★★★☆</div>
+                </div>
+
+                <h2 class="resource-title">Guia Definitivo de Derivadas e Regra da Cadeia</h2>
+                <p class="resource-desc">Um resumo prático com mapa mental detalhado cobrindo a interpretação geométrica das derivadas, regras de derivação (produto, quociente) e aplicações práticas da Regra da Cadeia com exercícios resolvidos.</p>
+
+                <div class="resource-footer">
+                    <div class="resource-author">
+                        <img src="../assets/images/icons/defaultprofile.png" alt="Autor">
+                        <span>Mariana Costa</span>
+                    </div>
+                    <div class="resource-meta">
+                        <div class="meta-item">
+                            <img src="../assets/images/icons/download_icon.png" alt="">
+                            <span>342 downloads</span>
+                        </div>
+                        <div class="meta-item">
+                            <img src="../assets/images/icons/chat_icon.png" alt="">
+                            <span>18 comentários</span>
+                        </div>
+                        <button class="btn-save">
+                            <img src="../assets/images/icons/fav_icon.png" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="resource-card">
+            <div class="resource-preview">
+                <img src="../assets/images/icons/recursos_icon.png" alt="Preview">
+            </div>
+            
+            <div class="resource-content">
+                <div class="resource-top">
+                    <div class="resource-tags">
+                        <span class="tag-category">CHEAT SHEET</span>
+                        <span class="tag-subject">FÍSICA</span>
+                    </div>
+                    <div class="resource-rating">★★★★★</div>
+                </div>
+
+                <h2 class="resource-title">Formulário Completo de Eletromagnetismo e Leis de Maxwell</h2>
+                <p class="resource-desc">Folha de consulta rápida contendo todas as fórmulas essenciais de campo elétrico, potencial, Lei de Gauss, Lei de Ampère e indução de Faraday. Ideal para revisar minutos antes da prova.</p>
+
+                <div class="resource-footer">
+                    <div class="resource-author">
+                        <img src="../assets/images/icons/defaultprofile.png" alt="Autor">
+                        <span>Carlos Eduardo</span>
+                    </div>
+                    <div class="resource-meta">
+                        <div class="meta-item">
+                            <img src="../assets/images/icons/download_icon.png" alt="">
+                            <span>512 downloads</span>
+                        </div>
+                        <div class="meta-item">
+                            <img src="../assets/images/icons/chat_icon.png" alt="">
+                            <span>24 comentários</span>
+                        </div>
+                        <button class="btn-save">
+                            <img src="../assets/images/icons/fav1_icon.png" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+        <article class="resource-card">
+            <div class="resource-preview">
+                <img src="../assets/images/icons/recursos_icon.png" alt="Preview">
+            </div>
+            
+            <div class="resource-content">
+                <div class="resource-top">
+                    <div class="resource-tags">
+                        <span class="tag-category">DICAS</span>
+                        <span class="tag-subject">ESTUDO</span>
+                    </div>
+                    <div class="resource-rating">★★★☆☆</div>
+                </div>
+
+                <h2 class="resource-title">Como Organizar Cronogramas para Matérias de Exatas</h2>
+                <p class="resource-desc">Dicas estruturadas de como aplicar o método Pomodoro adaptado para longas sessões de exercícios, estratégias de repetição espaçada e como criar um caderno de erros eficiente para engenharia.</p>
+
+                <div class="resource-footer">
+                    <div class="resource-author">
+                        <img src="../assets/images/icons/defaultprofile.png" alt="Autor">
+                        <span>Rodrigo Silva</span>
+                    </div>
+                    <div class="resource-meta">
+                        <div class="meta-item">
+                            <img src="../assets/images/icons/download_icon.png" alt="">
+                            <span>128 downloads</span>
+                        </div>
+                        <div class="meta-item">
+                            <img src="../assets/images/icons/chat_icon.png" alt="">
+                            <span>9 comentários</span>
+                        </div>
+                        <button class="btn-save">
+                            <img src="../assets/images/icons/fav_icon.png" alt="">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </article>
+
+    </div>
+
+    <div class="pagination">
+        <button class="pag-btn">‹</button>
+        <button class="pag-btn active">1</button>
+        <button class="pag-btn">2</button>
+        <button class="pag-btn">3</button>
+        <span>...</span>
+        <button class="pag-btn">12</button>
+        <button class="pag-btn">›</button>
+    </div>
+
+</section>
+
+        </main>
+
+    </div>
+
+    <footer>
+    <div class="footer-left">
+        <h2>Responde Aí</h2>
+        <p>© 2024 Responde Aí - Excelência Acadêmica</p>
+    </div>
+
+    <nav class="footer-links">
+        <a href="#">Privacidade</a>
+        <a href="#">Termos</a>
+        <a href="#">Ajuda</a>
+    </nav>
+
+    <div class="footer-social">
+        <a href="#">
+            <img src="../assets/images/icons/facebook_icon.png" alt="Discord">
+        </a>
+
+        <a href="#">
+            <img src="../assets/images/icons/instagram_icon.png" alt="GitHub">
+        </a>
+
+        <a href="#">
+            <img src="../assets/images/icons/twitter_icon.png" alt="Perfil">
+        </a>
+    </div>
+</footer>
+</body>
+</html>
