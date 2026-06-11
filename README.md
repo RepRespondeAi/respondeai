@@ -21,8 +21,10 @@ respondeai/
 │   │   └── script.js
 │   │
 │   └── images/
-│       └── background.jpg
-│
+│       ├── background.jpg
+│       │
+│       └── icons/
+│           └── defaultprofile.png
 ├── index.html
 └── README.md
 </pre>
